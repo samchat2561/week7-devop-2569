@@ -21,15 +21,6 @@ app.get('/api/products', (req, res) => {
     ]);
 });
 
-<<<<<<< HEAD
-=======
-//http://localhost:3000/api/users/101
-app.get('/api/users/:userId', (req, res) => {
-    const id = req.params.userId;
-    res.send(`กำลังดึงข้อมูลผู้ใช้งาน ID: ${id}`);
-});
-
->>>>>>> develop
 const PORT = 3000;
 app.listen(PORT, () => {
     console.log(`Server is running at http://localhost:${PORT}`);
