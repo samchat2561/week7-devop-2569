@@ -21,10 +21,10 @@ app.get('/api/users', (req, res) => {
 
 //http://localhost:3000/api/products
 app.get('/api/products', (req, res) => {
-    res.status(200).json([
-        // { id: 101, name: 'Notebook', price: 350 }
-        res.status(200).json(products)
-    ]);
+    // res.status(200).json([
+    //     { id: 101, name: 'Notebook', price: 350 }
+    // ]);
+    res.status(200).json(products)
 });
 
 const PORT = 3000;
