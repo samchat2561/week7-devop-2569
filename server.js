@@ -1,6 +1,11 @@
 const express = require('express');
 const app = express();
 
+const products = [
+    { id: 1, name: 'Keyboard' },
+    { id: 2, name: 'Mpuse' },
+]
+
 app.get('/', (req, res) => {
     // res.send(`Hello,Welcome to my API!`);
     res.status(200).json({ message: 'Welcome to my API!' })
@@ -17,7 +22,8 @@ app.get('/api/users', (req, res) => {
 //http://localhost:3000/api/products
 app.get('/api/products', (req, res) => {
     res.status(200).json([
-        { id: 101, name: 'Notebook', price: 350 }
+        // { id: 101, name: 'Notebook', price: 350 }
+        res.status(200).json(products)
     ]);
 });
 
